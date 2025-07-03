@@ -1,74 +1,133 @@
-
 body {
-    margin: 0;
-    font-family: "Cormorant Garamond", serif;
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  
-  .container {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-    padding: 1em 0;
-  }
-  
-  header {
-    background-color: #0d9488 ;
-    color: white;
-    padding: 1em 0;
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 1.8em;
-  }
-  
-  nav {
-    margin-top: 0.5em;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    margin-right: 15px;
-    font-weight: bold;
-  }
-  
-  .uno {
-    background-color: white;
-    text-align: center;
-    padding: 4em 1em;
-  }
-  
-img{
-    width: 100px;
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  background-color: #f9f9f9;
+  color: #333;
 }
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 1em 0;
+}
+
+header {
+  background-color: #0d9488;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+nav {
+  background-color: #0d9488;
+  padding: 0.5em 1em;
+  text-align: center;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.uno {
+  background-color: white;
+  text-align: center;
+  padding: 4em 1em;
+}
+
+.uno p {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+img {
+  width: 100px;
+  max-width: 100%;
+  height: auto;
+}
+
+.due {
+  display: inline-block;
+  padding: 0.8em 2em;
+  background-color: #979ba1;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.due:hover {
+  background-color: #0d9488;
+}
+
+footer {
+  background-color: #0d9488;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: 3em;
+}
+
+/* ------- Responsive Design ------- */
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  nav li {
+    display: block;
+    margin: 0.5em 0;
+  }
+
+  .uno {
+    padding: 2em 1em;
+  }
+
   .uno p {
-    font-size: 1.2em;
-    margin-bottom: 1.5em;
+    font-size: 1em;
   }
-  
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    padding: 1em 0;
+  }
+
+  nav li {
+    display: block;
+    margin: 0.5em 0;
+  }
+
   .due {
-    display: inline-block;
-    padding: 0.8em 2em;
-    background-color: #979ba1;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
   }
-  
-  .due:hover {
-    background-color: #0d9488;
+
+  img {
+    width: 80px;
   }
-  
-  footer {
-    background-color: #0d9488 ;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    margin-top: 3em;
-  }
-  
+}
